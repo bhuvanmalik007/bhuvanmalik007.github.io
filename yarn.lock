@@ -2714,9 +2714,9 @@ graceful-fs@~1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-grommet@^1.3.4:
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/grommet/-/grommet-1.3.4.tgz#e921666acdd2819887ad0ae41447fbc3fe5dfbec"
+grommet@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/grommet/-/grommet-1.4.1.tgz#b37fa321eb3006413c682f7af56916b6db6fe039"
   dependencies:
     classnames "^2.2.3"
     deep-assign "^2.0.0"
@@ -2731,13 +2731,14 @@ grommet@^1.3.4:
     inuit-responsive-tools "~0.1.1"
     inuit-shared "~0.1.5"
     lodash.zip "^4.2.0"
-    markdown-to-jsx "^5.0.0"
+    markdown-to-jsx "^5.3.3"
     moment "^2.13.0"
+    prop-types "^15.5.8"
     react "^15.3.0"
     react-addons-transition-group "^15.3.0"
     react-desc "^1.0.0"
     react-dom "^15.3.0"
-    react-intl "^2.1.2"
+    react-intl "^2.2.3"
     react-router "2 - 4"
     superagent "^3.3.1"
 
@@ -3874,9 +3875,9 @@ markdown-escapes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.0.tgz#c8ca19f1d94d682459e0a93c86db27a7ef716b23"
 
-markdown-to-jsx@^5.0.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-5.2.0.tgz#a8eaad21f5a6f747c17982f5dda8715464271c8c"
+markdown-to-jsx@^5.3.3:
+  version "5.3.3"
+  resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-5.3.3.tgz#3e48548e15da0426f019eb95fa96f3397b95e012"
   dependencies:
     lodash.get "^4.4.2"
     prop-types "^15.5.8"
@@ -4899,7 +4900,7 @@ qjobs@^1.1.4:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/qjobs/-/qjobs-1.1.5.tgz#659de9f2cf8dcc27a1481276f205377272382e73"
 
-qs@6.2.0, qs@^6.1.0, qs@~6.2.0:
+qs@6.2.0, qs@~6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
 
@@ -4907,7 +4908,7 @@ qs@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-1.2.2.tgz#19b57ff24dc2a99ce1f8bdf6afcda59f8ef61f88"
 
-qs@~6.3.0:
+qs@^6.1.0, qs@~6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.3.0.tgz#f403b264f23bc01228c74131b407f18d5ea5d442"
 
@@ -4995,9 +4996,9 @@ react-element-to-jsx-string@^5.0.0:
     stringify-object "^2.4.0"
     traverse "^0.6.6"
 
-react-intl@^2.1.2:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.2.3.tgz#8eebb03cddc38b337ed22fab78037ab53a594270"
+react-intl@^2.2.3:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.3.0.tgz#e1df6af5667fdf01cbe4aab20e137251e2ae5142"
   dependencies:
     intl-format-cache "^2.0.5"
     intl-messageformat "^1.3.0"
