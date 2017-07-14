@@ -22,9 +22,7 @@ const Bar = styled(Title)`
 `
 
 export default props =>
-  <Box align='stretch' direction='column' size={{ 'width': { max: 'full' } }}
-    pad={{ between:'small' }}
-  >
+  <Box align='stretch' direction='column' size={{ 'width': { max: 'full' } }} pad={{ between:'small' }} >
     <Box direction='row' justify='between' pad={{ horizontal: 'xlarge', vertical: 'small' }} >
       <Image src={skyline} size='large' />
       <ContactBox direction='column' pad='large'>

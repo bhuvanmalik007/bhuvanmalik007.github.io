@@ -4,9 +4,13 @@ import Box from 'grommet/components/Box'
 import Image from 'grommet/components/Image'
 import styled from 'styled-components'
 import Hero from '../../components/hero'
+import Skills from '../../components/skills'
 
 const Home = () => (
-  <Hero />
+  <div>
+    <Hero />
+    <Skills />
+  </div>
 )
 
 Home.propTypes = {
