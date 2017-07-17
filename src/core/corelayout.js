@@ -5,13 +5,13 @@ import Footer from '../components/appfooter'
 import styled from 'styled-components'
 
 const CoreBlock = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 `
 
 const Content = styled.div`
-  flex: 2;
+  flex: 1 auto;
 `
 
 export const CoreLayout = ({ children }) => (

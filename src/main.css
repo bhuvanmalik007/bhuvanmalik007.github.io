@@ -1,0 +1,8 @@
+.wallpaper {
+  background-image: url("./static/hero3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}

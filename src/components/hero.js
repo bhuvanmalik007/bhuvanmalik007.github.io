@@ -8,24 +8,27 @@ import Headline from 'grommet/components/Headline'
 import Paragraph from 'grommet/components/Paragraph'
 import Title from 'grommet/components/Title'
 import dp from '../static/dp.jpg'
+import Typist from 'react-typist'
 
 const Hero = () => (
-  <Box direction='row' justify='center' pad='large' >
+  <Box className='wallpaper' direction='row' justify='start' pad='medium' >
     <Box size='large' margin='small'>
       <Image src={dp} size='medium' />
     </Box>
-    <Box colorIndex='grey-2-a' direction='column' justify='between' textAlign='left'
+    <Box direction='column' justify='between' textAlign='left'
       pad={{ horizontal:'medium', vertical:'small' }} size='medium'>
-      <Title align='left' size='small'>Hello World.</Title>
-      <Paragraph size='large' margin='small'>
-        I'm Bhuvan Malik! I'm a Web Developer currently working at Dauble.
-      </Paragraph>
-      <Paragraph size='large' margin='small'>
-        I love JavaScript and I'm skilled in creating Web Applications based on React-Redux, AngularJS and Node.
-      </Paragraph>
-      <Paragraph size='large' margin='small'>
-        In my spare time, I play badminton and watch football and tennis.
-      </Paragraph>
+      <Typist cursor={{ show: false }} stdTypingDelay={1} >
+        <Title align='left' size='small'>Hello World.</Title>
+        <Paragraph size='large' margin='small'>
+          I'm Bhuvan Malik! I'm a Web Developer currently working at Dauble.
+        </Paragraph>
+        <Paragraph size='large' margin='small'>
+          I love JavaScript and I'm skilled in creating Web Applications based on React-Redux, AngularJS and Node.
+        </Paragraph>
+        <Paragraph size='large' margin='small'>
+          In my spare time, I play badminton and watch football and tennis.
+        </Paragraph>
+      </Typist>
     </Box>
   </Box>
 )

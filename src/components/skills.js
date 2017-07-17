@@ -13,49 +13,57 @@ import Tiles from 'grommet/components/Tiles'
 import Tile from 'grommet/components/Tile'
 import Columns from 'grommet/components/Columns'
 import Label from 'grommet/components/Label'
+import Animate from 'grommet/components/Animate'
 
-// const SkillsBox = styled(Box)`
-//   background: #732945;
-// `
+const BlackTitle = styled(Title)`
+  color: #000000;
+`
 
 const Skills = () =>
-  <Box colorIndex='light-2' direction='column' align='center' justify='center' pad='large' >
-    <h1>Skills</h1>
+  <Box colorIndex='light-1' direction='column' align='center' justify='center' pad='large' >
+    <BlackTitle>Skills</BlackTitle>
     {/* <Box full='horizontal' pad={{ horizontal: 'xlarge' }}> */}
     <Columns size='medium' justify='center' maxCount={3}>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
-      <Box direction='column' align='center' justify='center' pad={{vertical:'large', horizontal:'large'}} >
-        <Image src={react} size='small' />
-        <Label margin='small'>React</Label>
-        <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
-      </Box>
+      <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate>
+      <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate>
+      <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate><Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate><Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate><Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
+          <Image src={react} size='small' />
+          <Label margin='small'>React</Label>
+          <Paragraph margin='none'>Frontend Development - Component Based Designs</Paragraph>
+        </Box>
+      </Animate>
     </Columns>
-    {/* </Box> */}
-
   </Box>
 
 export default Skills
