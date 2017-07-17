@@ -10,15 +10,19 @@ import Title from 'grommet/components/Title'
 import dp from '../static/dp.jpg'
 import Typist from 'react-typist'
 
+const ImageFrame = styled(Box)`
+  background: #AF7AC5;
+`
+
 const Hero = () => (
-  <Box className='wallpaper' direction='row' justify='start' pad='medium' >
-    <Box size='large' margin='small'>
+  <Box className='wallpaper' direction='row' justify='center' pad='large' >
+    <ImageFrame size='medium' margin='small' pad='small' colorIndex='brand' align='center' >
       <Image src={dp} size='medium' />
-    </Box>
+    </ImageFrame>
     <Box direction='column' justify='between' textAlign='left'
       pad={{ horizontal:'medium', vertical:'small' }} size='medium'>
-      <Typist cursor={{ show: false }} stdTypingDelay={1} >
-        <Title align='left' size='small'>Hello World.</Title>
+      <Typist cursor={{ show: false }} stdTypingDelay={1} avgTypingDelay={30}>
+        <Title align='left' size='small'>Hello World!</Title>
         <Paragraph size='large' margin='small'>
           I'm Bhuvan Malik! I'm a Web Developer currently working at Dauble.
         </Paragraph>
