@@ -28,6 +28,10 @@ const BlackTitle = styled(Title)`
   color: #000000;
 `
 
+const JWBlackLabel = styled(Label)`
+  color: #000000;
+`
+
 const SkillsBox = styled(Box)`
   color: #ffffff;
 `
@@ -41,8 +45,8 @@ const Skills = () =>
       <Grid.Column>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-            <Image src={react} size='small' />
-            <Label margin='small'>React</Label>
+            <Image src={react} size='small' full='vertical' />
+            <JWBlackLabel margin='small'>React</JWBlackLabel>
             <Paragraph margin='none'>Component Based Designs</Paragraph>
           </Box>
         </Animate>
@@ -51,7 +55,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={redux} size='small' />
-            <Label margin='small'>Redux</Label>
+            <JWBlackLabel margin='small'>Redux</JWBlackLabel>
             <Paragraph margin='none'>Immutable State Management</Paragraph>
           </Box>
         </Animate>
@@ -60,7 +64,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={angular} size='small' />
-            <Label margin='small'>Angular JS</Label>
+            <JWBlackLabel margin='small'>Angular JS</JWBlackLabel>
             <Paragraph margin='none'>Frontend Development</Paragraph>
           </Box>
         </Animate>
@@ -69,7 +73,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={node} size='small' />
-            <Label margin='small'>Node JS</Label>
+            <JWBlackLabel margin='small'>Node JS</JWBlackLabel>
             <Paragraph margin='none'>Backend Development</Paragraph>
           </Box>
         </Animate>
@@ -78,7 +82,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={express} size='small' />
-            <Label margin='small'>Express</Label>
+            <JWBlackLabel margin='small'>Express</JWBlackLabel>
             <Paragraph margin='none'>Rest APIs</Paragraph>
           </Box>
         </Animate>
@@ -86,8 +90,8 @@ const Skills = () =>
       <Grid.Column>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-            <Image src={socketio} size='small' />
-            <Label margin='small'>Socket IO</Label>
+            <Image src={socketio} size='small' full='vertical' />
+            <JWBlackLabel margin='small'>Socket IO</JWBlackLabel>
             <Paragraph margin='none'>real-time event based communication</Paragraph>
           </Box>
         </Animate>
@@ -96,7 +100,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={android} size='small' />
-            <Label margin='small'>Android</Label>
+            <JWBlackLabel margin='small'>Android</JWBlackLabel>
             <Paragraph margin='none'>Android Application Development with Java </Paragraph>
           </Box>
         </Animate>
@@ -105,7 +109,7 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={rx} size='small' />
-            <Label margin='small'>RxJS</Label>
+            <JWBlackLabel margin='small'>RxJS</JWBlackLabel>
             <Paragraph margin='none'>Frontend Development - Redux Sideffects using Observables</Paragraph>
           </Box>
         </Animate>
@@ -114,74 +118,11 @@ const Skills = () =>
         <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={mongo} size='small' />
-            <Label margin='small'>Mongo DB</Label>
+            <JWBlackLabel margin='small'>Mongo DB</JWBlackLabel>
             <Paragraph margin='none'>Backend Development - Document Based Database</Paragraph>
           </Box>
         </Animate>
       </Grid.Column>
-      {/* <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={react} size='small' />
-          <Label margin='small'>React</Label>
-          <Paragraph margin='none'>Component Based Designs</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={redux} size='small' />
-          <Label margin='small'>Redux</Label>
-          <Paragraph margin='none'>Immutable State Management</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={angular} size='small' />
-          <Label margin='small'>Angular JS</Label>
-          <Paragraph margin='none'>Frontend Development</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={node} size='small' />
-          <Label margin='small'>Node JS</Label>
-          <Paragraph margin='none'>Backend Development</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={express} size='small' />
-          <Label margin='small'>Express</Label>
-          <Paragraph margin='none'>Rest APIs</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={socketio} size='small' />
-          <Label margin='small'>Socket IO</Label>
-          <Paragraph margin='none'>real-time bidirectional event-based communication.</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={android} size='small' />
-          <Label margin='small'>Android</Label>
-          <Paragraph margin='none'>Android Application Development with Java </Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={rx} size='small' />
-          <Label margin='small'>RxJS</Label>
-          <Paragraph margin='none'>Frontend Development - Redux Sideffects using Observables</Paragraph>
-        </Box>
-        </Animate>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
-        <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
-          <Image src={mongo} size='small' />
-          <Label margin='small'>Mongo DB</Label>
-          <Paragraph margin='none'>Backend Development - Document Based Database</Paragraph>
-        </Box>
-      </Animate> */}
     </Grid>
     {/* </Box> */}
     {/* </Columns> */}
