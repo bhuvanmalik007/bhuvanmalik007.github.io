@@ -1,4 +1,4 @@
-# React-Redux-Boilerplate
+# Personal Website
 
 Env Setup
 

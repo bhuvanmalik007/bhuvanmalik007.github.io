@@ -1,8 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Box from 'grommet/components/Box'
-import Image from 'grommet/components/Image'
-import styled from 'styled-components'
 import Hero from '../../components/hero'
 import Skills from '../../components/skills'
 
