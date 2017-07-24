@@ -7,30 +7,53 @@ import Paragraph from 'grommet/components/Paragraph'
 import Title from 'grommet/components/Title'
 import dp from '../static/dp.jpg'
 import Typist from 'react-typist'
+import Heading from 'grommet/components/Heading'
+import Animate from 'grommet/components/Animate'
 
 const ImageFrame = styled(Box)`
   background: #AF7AC5;
 `
+const StyledTitle = styled(Title)`
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+`
+
+const StyledPara = styled(Paragraph)`
+  font-family: 'Montserrat', monospace;
+  color: #283747;
+  /*font-size: 30px;*/
+`
 
 const Hero = () => (
-  <Box className='wallpaper' direction='row' justify='center' pad='large' >
+  <Box className='wallpaper' direction='row' justify='center' pad={{ vertical: 'large', between:'large' }} >
     <ImageFrame size='medium' margin='small' pad='small' colorIndex='brand' align='center' >
       <Image src={dp} size='medium' />
     </ImageFrame>
     <Box direction='column' justify='between' textAlign='left'
-      pad={{ horizontal:'medium', vertical:'small' }} size='medium'>
-      <Typist cursor={{ show: false }} stdTypingDelay={1} avgTypingDelay={30}>
-        <Title align='left' size='small'>Hello World!</Title>
-        <Paragraph size='large' margin='small'>
-          I'm Bhuvan Malik! I'm a Web Developer currently working at Dauble.
-        </Paragraph>
-        <Paragraph size='large' margin='small'>
+      pad={{ horizontal:'medium', vertical:'small' }} size={{ vertical: 'medium', horizontal:'large' }}>
+      <Typist cursor={{ show: false }} stdTypingDelay={1} avgTypingDelay={20}>
+        <StyledTitle align='left' size='large'>Hello World!</StyledTitle>
+        <StyledPara size='large' margin='small'>
+          I'm Bhuvan Malik! I'm a Web Developer from India currently working at Dauble.
+        </StyledPara>
+        <StyledPara size='large' margin='small'>
           I love JavaScript and I'm skilled in creating Web Applications based on React-Redux, AngularJS and Node.
-        </Paragraph>
-        <Paragraph size='large' margin='small'>
+        </StyledPara>
+        <StyledPara size='large' margin='small'>
           In my spare time, I play badminton and watch football and tennis.
-        </Paragraph>
+        </StyledPara>
       </Typist>
+      <Box direction='row' justify='center' pad={{ between:'large', vertical:'small' }}>
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5000 }} >
+          <Heading size='large' >💻</Heading>
+        </Animate>
+        {/* <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 3200 }} >
+          <Heading size='large' >⚛️</Heading>
+        </Animate> */}
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5700 }} >
+          <Heading size='large'>🏸</Heading>
+        </Animate>
+      </Box>
     </Box>
   </Box>
 )

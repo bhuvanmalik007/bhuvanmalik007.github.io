@@ -3,7 +3,7 @@ import Box from 'grommet/components/Box'
 import Image from 'grommet/components/Image'
 import styled from 'styled-components'
 import Paragraph from 'grommet/components/Paragraph'
-import Title from 'grommet/components/Title'
+import Heading from 'grommet/components/Heading'
 import react from '../static/react.png'
 import Label from 'grommet/components/Label'
 import Animate from 'grommet/components/Animate'
@@ -17,8 +17,8 @@ import rx from '../static/rx.png'
 import mongo from '../static/mongo.png'
 import { Grid } from 'semantic-ui-react'
 
-const BlackTitle = styled(Title)`
-  color: #000000;
+const BlackTitle = styled(Heading)`
+  color: #283747;
 `
 
 const JWBlackLabel = styled(Label)`
@@ -31,12 +31,10 @@ const SkillsBox = styled(Box)`
 
 const Skills = () =>
   <SkillsBox direction='column' align='center' justify='center' pad='large' >
-    <BlackTitle>Skills</BlackTitle>
-    {/* <Columns size='medium' justify='center' maxCount={3} masonry > */}
-    {/* <Box direction='row' justify='center' alignContent='center' wrap pad='large'> */}
+    <BlackTitle size='large' align='center'>Skills</BlackTitle>
     <Grid relaxed columns={3} stackable verticalAlign='center'>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={react} size='small' full='vertical' />
             <JWBlackLabel margin='small'>React</JWBlackLabel>
@@ -45,7 +43,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 300 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={redux} size='small' />
             <JWBlackLabel margin='small'>Redux</JWBlackLabel>
@@ -54,7 +52,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 500 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={angular} size='small' />
             <JWBlackLabel margin='small'>Angular JS</JWBlackLabel>
@@ -63,7 +61,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 200 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={node} size='small' />
             <JWBlackLabel margin='small'>Node JS</JWBlackLabel>
@@ -72,7 +70,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 400 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={express} size='small' />
             <JWBlackLabel margin='small'>Express</JWBlackLabel>
@@ -81,16 +79,16 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 600 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={socketio} size='small' full='vertical' />
             <JWBlackLabel margin='small'>Socket IO</JWBlackLabel>
-            <Paragraph margin='none'>real-time event based communication</Paragraph>
+            <Paragraph margin='none'>Real-time event based communication</Paragraph>
           </Box>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 200 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={android} size='small' />
             <JWBlackLabel margin='small'>Android</JWBlackLabel>
@@ -99,7 +97,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 400 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={rx} size='small' />
             <JWBlackLabel margin='small'>RxJS</JWBlackLabel>
@@ -108,7 +106,7 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
       <Grid.Column>
-        <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
+        <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 600 }} keep visible='scroll' >
           <Box direction='column' align='center' justify='center' pad={{ vertical:'large', horizontal:'large' }} >
             <Image src={mongo} size='small' />
             <JWBlackLabel margin='small'>Mongo DB</JWBlackLabel>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 .wallpaper {
   background-image: url("./static/hero3.jpg");
   background-attachment: fixed;
@@ -5,4 +8,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
+}
+
+.montserret {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserret {
+  font-size: 14px;
+  font-family: 'Source Code Pro', monospace;
 }

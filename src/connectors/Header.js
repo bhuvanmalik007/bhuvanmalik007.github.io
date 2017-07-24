@@ -13,6 +13,7 @@ import SocialFacebookIcon from 'grommet/components/icons/base/SocialFacebook'
 import SocialGithubIcon from 'grommet/components/icons/base/SocialGithub'
 import Image from 'grommet/components/Image'
 import nameLogo from '../static/name_logo.png'
+import Animate from 'grommet/components/Animate'
 
 const StyledAnchor = styled(Anchor)`
   color : #000000;
@@ -22,15 +23,19 @@ const StyledAnchor = styled(Anchor)`
   }
   padding-top: 15px
 `
-
-const socialOpener = () => {
-  window.open('mailTo:bhuvanmalik1994@gmail.com', '_self')
+const links = {
+  mail: 'mailTo:bhuvanmalik1994@gmail.com',
+  medium: 'https://medium.com/@bhuvanmalik',
+  facebook: 'https://www.facebook.com/bhuvan007',
+  github: 'https://github.com/bhuvanmalik007'
 }
 
-export const AppHeader = props => (
-  <Header
-    fixed={false}
-  >
+const socialOpener = (type) => {
+  type === 'mail' ? window.open('mailTo:bhuvanmalik1994@gmail.com', '_self') : window.open(links[type], '_blank')
+}
+
+export const AppHeader = props =>
+  <Header fixed={false}>
     <Box size='xxlarge' flex align='center' alignSelf='center'
       pad={{ horizontal: 'medium', vertical:'none' }} >
       <Image src={nameLogo} size='large' />
@@ -40,14 +45,21 @@ export const AppHeader = props => (
       direction='row'
       responsive={false}
       pad={{ horizontal: 'medium', vertical:'small' }}>
-      <StyledAnchor label='PROJECTS' onClick={socialOpener} />
-      <Anchor icon={<MailIcon />} onClick={socialOpener} />
-      <Anchor icon={<SocialMediumIcon />} onClick={socialOpener} />
-      <Anchor icon={<SocialFacebookIcon />} onClick={socialOpener} />
-      <Anchor icon={<SocialGithubIcon />} onClick={socialOpener} />
+      {/* <StyledAnchor label='PROJECTS' onClick={socialOpener} /> */}
+      <Animate enter={{ 'animation': 'slide-down', 'duration': 1000, 'delay': 600 }}>
+        <Anchor icon={<MailIcon size='small' />} onClick={() => socialOpener('mail')} />
+      </Animate>
+      <Animate enter={{ 'animation': 'slide-down', 'duration': 1000, 'delay': 800 }}>
+        <Anchor icon={<SocialMediumIcon size='small' />} onClick={() => socialOpener('medium')} />
+      </Animate>
+      <Animate enter={{ 'animation': 'slide-down', 'duration': 1000, 'delay': 1000 }}>
+        <Anchor icon={<SocialFacebookIcon size='small' />} onClick={() => socialOpener('facebook')} />
+      </Animate>
+      <Animate enter={{ 'animation': 'slide-down', 'duration': 1000, 'delay': 1200 }}>
+        <Anchor icon={<SocialGithubIcon size='small' />} onClick={() => socialOpener('mail')} />
+      </Animate>
     </Box>
   </Header>
-      )
 
 AppHeader.propTypes = {
 }

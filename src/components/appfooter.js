@@ -8,12 +8,16 @@ import Image from 'grommet/components/Image'
 import skyline from '../static/skyline.png'
 import styled from 'styled-components'
 import Heading from 'grommet/components/Heading'
+import { Divider } from 'semantic-ui-react'
 
 const ContactBox = styled(Box)`
-  background: #732945;
+  background: #7c3651;
 `
 
-const WhiteText = styled(Heading)`
+const WhiteHeading = styled(Heading)`
+  color: #ffffff
+`
+const WhitePara = styled(Paragraph)`
   color: #ffffff
 `
 
@@ -23,12 +27,17 @@ const Bar = styled(Title)`
 
 export default props =>
   <Box align='stretch' direction='column' size={{ 'width': { max: 'full' } }} pad={{ between:'small' }} >
+    <Divider />
     <Box direction='row' justify='between' pad={{ horizontal: 'xlarge', vertical: 'small' }} >
       <Image src={skyline} size='large' />
-      <ContactBox direction='column' pad='large'>
-        <WhiteText margin='none' tag='h4' >
-          CONTACT INFORMATION
-        </WhiteText>
+      <ContactBox direction='column' justify='start' align='center'
+        pad={{ vertical: 'medium', horizontal: 'medium', between: 'none' }}>
+        <WhiteHeading margin='none' tag='h4' strong>
+          GET IN TOUCH!
+        </WhiteHeading>
+        <WhitePara margin='small'>E-MAIL: bhuvanmalik1994@gmail.com</WhitePara>
+        <WhitePara margin='small'>PHONE: +91 9871056888 </WhitePara>
+        <WhitePara margin='small'>ADDRESS: Gurgaon, India</WhitePara>
       </ContactBox>
     </Box>
     <Footer justify='center' colorIndex='light-2' size='large'>
