@@ -35,10 +35,10 @@ const socialOpener = (type) => {
 }
 
 export const AppHeader = props =>
-  <Header fixed={false}>
-    <Box size='xxlarge' flex align='center' alignSelf='center'
+  <Header responsive wrap>
+    <Box size='xlarge' flex align='center' justify='start' alignSelf='center'
       pad={{ horizontal: 'medium', vertical:'none' }} >
-      <Image src={nameLogo} size='large' />
+      <Image src={nameLogo} size='medium' />
     </Box>
     <Box flex
       justify='end'

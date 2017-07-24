@@ -31,7 +31,7 @@ const SkillsBox = styled(Box)`
 
 const Skills = () =>
   <SkillsBox direction='column' align='center' justify='center' pad='large' >
-    <BlackTitle size='large' align='center'>Skills</BlackTitle>
+    <BlackTitle size='large' align='center' strong>SKILLS</BlackTitle>
     <Grid relaxed columns={3} stackable verticalAlign='center'>
       <Grid.Column>
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
