@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router' //eslint-disable-line
 import PropTypes from 'prop-types' //eslint-disable-line
 import Header from 'grommet/components/Header'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 import Box from 'grommet/components/Box'
 import MailIcon from 'grommet/components/icons/base/Mail'
 import Anchor from 'grommet/components/Anchor'
@@ -15,14 +15,14 @@ import Image from 'grommet/components/Image'
 import nameLogo from '../static/name_logo.png'
 import Animate from 'grommet/components/Animate'
 
-const StyledAnchor = styled(Anchor)`
-  color : #000000;
-  font-size: 18px;
-  &:hover{
-    color: #865cd6
-  }
-  padding-top: 15px
-`
+// const StyledAnchor = styled(Anchor)`
+//   color : #000000;
+//   font-size: 18px;
+//   &:hover{
+//     color: #865cd6
+//   }
+//   padding-top: 15px
+// `
 const links = {
   mail: 'mailTo:bhuvanmalik1994@gmail.com',
   medium: 'https://medium.com/@bhuvanmalik',

@@ -8,7 +8,7 @@ import Image from 'grommet/components/Image'
 import skyline from '../static/skyline.png'
 import styled from 'styled-components'
 import Heading from 'grommet/components/Heading'
-import { Divider } from 'semantic-ui-react'
+import texture from '../static/texture.png'
 
 const ContactBox = styled(Box)`
   background: #7c3651;
@@ -26,8 +26,9 @@ const Bar = styled(Title)`
 `
 
 export default props =>
-  <Box align='stretch' direction='column' size={{ 'width': { max: 'full' } }} pad={{ between:'small' }} >
-    <Divider />
+  <Box align='stretch' direction='column' texture={texture}
+    size={{ 'width': { max: 'full' } }} pad={{ between:'small' }} >
+    {/* <Divider /> */}
     <Box direction='row' justify='center' pad={{ between: 'large', vertical: 'small' }} >
       <Image src={skyline} size='large' />
       <ContactBox direction='column' justify='start' align='center'
