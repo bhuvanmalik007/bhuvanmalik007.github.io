@@ -102,6 +102,7 @@
     "ramda": "^0.23.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-masonry-component": "^5.0.7",
     "react-redux": "^5.0.1",
     "react-router": "^3.0.0",
     "react-typist": "^1.1.1",
