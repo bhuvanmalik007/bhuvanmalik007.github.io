@@ -43,69 +43,94 @@ const Projects = () => (
         </Anchor>
       </Menu>
     </Box>
-    <Box direction='column' pad='medium' full colorIndex='light-2' flex='grow' basis='full'>
-      <Grid relaxed columns={3} stackable verticalAlign='middle'>
-        <Grid.Column>
+    <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
+      <Columns size='medium' justify='between' pad='large'
+        maxCount={3} masonry>
+        <Box pad='none' margin='medium'>
           <Card
             colorIndex='light-1'
             contentPad='small' >
             <Image src={dauble} />
-            <Heading margin='small'>Dauble</Heading>
+            <Heading margin='small'>1</Heading>
             <Label margin='xsmall'>Angular JS</Label>
             <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
               their Art Collection privately, and Galleries and Artists to manage their business efficiently,
             with a social network connecting all parties.</Paragraph>
           </Card>
-        </Grid.Column>
-        <Grid.Column>
+        </Box>
+        <Box pad='none' margin='medium'>
           <Card
             colorIndex='light-1'
             contentPad='small' >
             <Image src={dauble} />
-            <Heading margin='small'>Dauble</Heading>
+            <Heading margin='small'>2</Heading>
             <Label margin='xsmall'>Angular JS</Label>
             <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
               their Art Collection privately, and Galleries and Artists to manage their business efficiently,
             with a social network connecting all parties.</Paragraph>
           </Card>
-        </Grid.Column>
-        <Grid.Column>
+        </Box>
+        <Box pad='none' margin='medium'>
           <Card
             colorIndex='light-1'
             contentPad='small' >
             <Image src={dauble} />
-            <Heading margin='small'>Dauble</Heading>
+            <Heading margin='small'>3</Heading>
             <Label margin='xsmall'>Angular JS</Label>
             <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
               their Art Collection privately, and Galleries and Artists to manage their business efficiently,
             with a social network connecting all parties.</Paragraph>
           </Card>
-        </Grid.Column>
-        <Grid.Column>
+        </Box>
+        <Box pad='none' margin='medium'>
           <Card
             colorIndex='light-1'
             contentPad='small' >
             <Image src={dauble} />
-            <Heading margin='small'>Dauble</Heading>
+            <Heading margin='small'>4</Heading>
             <Label margin='xsmall'>Angular JS</Label>
             <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
               their Art Collection privately, and Galleries and Artists to manage their business efficiently,
             with a social network connecting all parties.</Paragraph>
           </Card>
-        </Grid.Column>
-        <Grid.Column>
+        </Box>
+        <Box pad='none' margin='medium'>
           <Card
             colorIndex='light-1'
             contentPad='small' >
             <Image src={dauble} />
-            <Heading margin='small'>Dauble</Heading>
+            <Heading margin='small'>5</Heading>
             <Label margin='xsmall'>Angular JS</Label>
             <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
               their Art Collection privately, and Galleries and Artists to manage their business efficiently,
             with a social network connecting all parties.</Paragraph>
           </Card>
-        </Grid.Column>
-      </Grid>
+        </Box>
+        <Box pad='none' margin='medium'>
+          <Card
+            colorIndex='light-1'
+            contentPad='small' >
+            <Image src={dauble} />
+            <Heading margin='small'>6</Heading>
+            <Label margin='xsmall'>Angular JS</Label>
+            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
+              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
+            with a social network connecting all parties.</Paragraph>
+          </Card>
+        </Box>
+        <Box pad='none' margin='medium'>
+          <Card
+            colorIndex='light-1'
+            contentPad='small' >
+            <Image src={dauble} />
+            <Heading margin='small'>7</Heading>
+            <Label margin='xsmall'>Angular JS</Label>
+            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
+              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
+            with a social network connecting all parties.</Paragraph>
+          </Card>
+        </Box>
+      </Columns>
     </Box>
   </div>
   // </Box>
