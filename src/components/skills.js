@@ -3,7 +3,6 @@ import Box from 'grommet/components/Box'
 import Image from 'grommet/components/Image'
 import styled from 'styled-components'
 import Paragraph from 'grommet/components/Paragraph'
-import Heading from 'grommet/components/Heading'
 import react from '../static/react.png'
 import Label from 'grommet/components/Label'
 import Animate from 'grommet/components/Animate'
@@ -16,10 +15,7 @@ import android from '../static/android.png'
 import rx from '../static/rx.png'
 import mongo from '../static/mongo.png'
 import { Grid } from 'semantic-ui-react'
-
-const BlackTitle = styled(Heading)`
-  color: #283747;
-`
+import GunmetalHeading from '../components/gunmetalheading'
 
 const JWBlackLabel = styled(Label)`
   color: #000000;
@@ -31,7 +27,7 @@ const SkillsBox = styled(Box)`
 
 const Skills = () =>
   <SkillsBox direction='column' align='center' justify='center' pad='large' >
-    <BlackTitle size='large' align='center' strong>SKILLS</BlackTitle>
+    <GunmetalHeading size='large' align='center' strong>SKILLS</GunmetalHeading>
     <Grid relaxed columns={3} stackable verticalAlign='middle'>
       <Grid.Column>
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 100 }} keep visible='scroll' >
