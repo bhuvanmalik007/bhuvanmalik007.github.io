@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 import Box from 'grommet/components/Box'
 import Anchor from 'grommet/components/Anchor'
 import Menu from 'grommet/components/Menu'
@@ -9,12 +9,17 @@ import texture from '../../static/texture.png'
 import FilterIcon from 'grommet/components/icons/base/Filter'
 import Card from 'grommet/components/Card'
 import Columns from 'grommet/components/Columns'
-import dauble from '../../static/dauble.png'
 import Image from 'grommet/components/Image'
 import Paragraph from 'grommet/components/Paragraph'
 import Heading from 'grommet/components/Heading'
-import Label from 'grommet/components/Label'
-import { Grid } from 'semantic-ui-react'
+import { Label as SLabel } from 'semantic-ui-react'
+import { projectsStore } from '../../constants'
+import SocialGithubIcon from 'grommet/components/icons/base/SocialGithub'
+
+const ClickableImage = styled(Image)`
+  cursor: pointer;
+  border: 5px;
+`
 
 const Projects = () => (
   // <Box direction='column' full justify='start' align='center'>
@@ -44,92 +49,24 @@ const Projects = () => (
       </Menu>
     </Box>
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
-      <Columns size='medium' justify='between' pad='large'
+      <Columns size='small' justify='between' pad='small'
         maxCount={3} masonry>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>1</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>2</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>3</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>4</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>5</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>6</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
-        <Box pad='none' margin='medium'>
-          <Card
-            colorIndex='light-1'
-            contentPad='small' >
-            <Image src={dauble} />
-            <Heading margin='small'>7</Heading>
-            <Label margin='xsmall'>Angular JS</Label>
-            <Paragraph margin='small'>Dauble is an Art platform that allows Collectors to manage
-              their Art Collection privately, and Galleries and Artists to manage their business efficiently,
-            with a social network connecting all parties.</Paragraph>
-          </Card>
-        </Box>
+        {projectsStore.map((project, index) =>
+          <Box pad='none' margin='medium'>
+            <Card
+              colorIndex='light-1'
+              contentPad='small'>
+              <ClickableImage src={project.img} onClick={_ => window.open(project.link, '_blank')} />
+              <Heading margin='small'>{project.name} {
+                project.github && <Anchor icon={<SocialGithubIcon size='medium' />} link={project.github} />
+              }
+              </Heading>
+              <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
+              <Paragraph margin='small'>{project.description}</Paragraph>
+
+            </Card>
+          </Box>
+        )}
       </Columns>
     </Box>
   </div>
