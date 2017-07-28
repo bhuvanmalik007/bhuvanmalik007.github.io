@@ -1,7 +1,12 @@
-import dauble from './static/dauble.png'
-import business from './static/business.png'
-
 export const projectsStore = [{
+  name: 'VocabDB',
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/vocabdb.png?` +
+  `alt=media&token=4b57b16d-3d3f-4fa2-95ac-017848117810`,
+  tech: [{ name: 'React', color:'teal' }, { name: 'Redux', color:'violet' }],
+  description: `A complete solution for building vocabulary through flashcards based learning. Features include
+  storage, sorting, organization, tests, segregation into lists of flashcards etc. Powered by Oxford Dictionaries.`,
+  github: 'https://github.com/bhuvanmalik007/vocabdb'
+}, {
   name: 'Dauble Collector',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/dauble.png?` +
   `alt=media&token=2a8e1037-6073-41b0-87eb-b8398575819b`,
@@ -12,7 +17,8 @@ export const projectsStore = [{
   link: 'http://dauble.com/home'
 }, {
   name: 'Dauble Business',
-  img: business,
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/business.png?` +
+  `alt=media&token=ed9a0f05-24d8-43a2-a035-75f4cfbd3123`,
   clickable: true,
   tech: [{ name: 'Angular JS', color:'red' }],
   description: `Dauble Business allows Art Businesses like Galleries, Artists, Museum Curators to manage their
@@ -25,15 +31,15 @@ export const projectsStore = [{
   exposing capabilities like Featuring/Unfeaturing, Adding/Deleting/Modifying, Artworks, Artists, Galleries,
   Events and Museums, Blocking/Unblocking Users, and other activities related to management of Artwork Data on Dauble.`
 }, {
-  name: 'VocabDB',
-  img: dauble,
+  name: 'PipeTrak-GEOUI',
   tech: [{ name: 'React', color:'teal' }, { name: 'Redux', color:'violet' }],
-  description: `A complete solution for building vocabulary through flashcards based learning. Features include
-  storage, sorting, organization, tests, segregation into lists of flashcards etc. Powered by Oxford Dictionaries.`,
-  github: 'https://github.com/bhuvanmalik007/vocabdb'
+  description: `Pipetrak GEOUI is a Real Time Geographical Information System Web Application helping Pipeline
+  Engineers to track construction of Pipeline along various geographies. Users can query Map for various stages of
+  construction and locations, along with rich details of a Geolocation.`
 }, {
   name: 'Collabpad',
-  img: dauble,
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/collabpad.png?` +
+  `alt=media&token=8e2f332e-5f8a-4d38-8054-3312f28eda53`,
   tech: [{ name: 'Vue JS', color:'green' }, { name: 'socket.io', color:'black' }],
   description: `⚡️Real-Time collaborative text sharing notepad with Bitcoin integration. User can also save notepad
   contents as a text file
@@ -41,8 +47,15 @@ export const projectsStore = [{
   github: 'https://github.com/bhuvanmalik007/COLLABPAD-FRONT',
   link: 'https://collabpad007.herokuapp.com'
 }, {
+  name: 'Collabpad-API',
+  tech: [{ name: 'Node', color:'olive' }, { name: 'socket.io', color:'black' }],
+  description: `API for Collabpad, uses Socket.io for real-time collaboration.
+  Also includes server side Bitcoin integration for donation.`,
+  github: 'https://github.com/bhuvanmalik007/COLLABPAD-BITCOIN'
+}, {
   name: 'Time-Machine',
-  img: dauble,
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/timemachine.png?` +
+  `alt=media&token=76b3eab7-687d-49d6-9760-3c92474eec51`,
   tech: [{ name: 'React', color:'teal' }],
   description: `🕰 A simple tool to Transpile JavaScript ES6 code to ES5.`,
   github: 'https://github.com/bhuvanmalik007/time-machine',
@@ -51,16 +64,11 @@ export const projectsStore = [{
   name: 'Sentiment Analysis',
   tech: [{ name: 'Node', color:'olive' }],
   description: `Used  to provide a score based on user sentiment analysis through single/multiple comments.`,
-  github: 'https://github.com/bhuvanmalik007/time-machine'
-}, {
-  name: 'Collabpad-API',
-  tech: [{ name: 'Node', color:'olive' }, { name: 'socket.io', color:'black' }],
-  description: `API for Collabpad, uses Socket.io for real-time collaboration.
-  Also includes server side Bitcoin integration for donation.`,
-  github: 'https://github.com/bhuvanmalik007/time-machine'
+  github: 'https://github.com/bhuvanmalik007/sentiment-analysis'
 }, {
   name: 'Gipht',
-  img: dauble,
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/gipht.png?` +
+  `alt=media&token=303e43e0-463c-4114-8438-d79096673014`,
   tech: [{ name: 'React', color:'teal' }],
   description: `Gipht 🎁 is a web app for searching GIFs. Powered by Giphy API.`,
   github: 'https://github.com/bhuvanmalik007/gipht',
@@ -79,7 +87,8 @@ export const projectsStore = [{
   github: 'https://github.com/bhuvanmalik007/quote-unquote'
 }, {
   name: 'Quote-Unquote',
-  img: dauble,
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/quoteunquote.png?` +
+  `alt=media&token=d7d35bbc-3ca0-4742-9dbc-4591eabe0ae2`,
   tech: [{ name: 'Vue JS', color:'green' }],
   description: `Front-End for displaying Game of Thrones Quotes scraped from imdb.com.`,
   github: 'https://github.com/bhuvanmalik007/quote-unquote-frontend',
@@ -111,5 +120,5 @@ export const projectsStore = [{
   name: 'Lamborghini Wallpapers',
   tech: [{ name: 'Android', color:'green' }],
   description: `Wallpapers app to change and store the included Lamborghini wallpapers.`,
-  github: 'https://github.com/bhuvanmalik007/trackyourtag-app'
+  github: 'https://github.com/bhuvanmalik007/lamborghini-wallpapers'
 }]

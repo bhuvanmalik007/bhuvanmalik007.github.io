@@ -14,6 +14,7 @@ import Paragraph from 'grommet/components/Paragraph'
 import Heading from 'grommet/components/Heading'
 import { Label as SLabel } from 'semantic-ui-react'
 import SocialGithubIcon from 'grommet/components/icons/base/SocialGithub'
+import Animate from 'grommet/components/Animate'
 
 const ClickableImage = styled(Image)`
   cursor: pointer;
@@ -46,25 +47,27 @@ const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter })
       </Menu>
     </Box>
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
-      <Columns size='small' justify='between' pad='small'
-        maxCount={4} masonry>
-        {filteredArray.map((project, index) =>
-          <Box pad='none' margin='medium'>
-            <Card
-              colorIndex='light-1'
-              contentPad='small'>
-              <ClickableImage src={project.img} onClick={_ => window.open(project.link, '_blank')} />
-              <Heading margin='small'>{project.name} {
-                project.github && <Anchor target='_blank' icon={<SocialGithubIcon size='medium' />}
-                  href={project.github} />
-              }
-              </Heading>
-              <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
-              <Paragraph margin='small'>{project.description}</Paragraph>
-            </Card>
-          </Box>
-        )}
-      </Columns>
+      <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }}>
+        <Columns size='small' justify='between' pad='small'
+          maxCount={3} masonry>
+          {filteredArray.map((project, index) =>
+            <Box pad='none' margin='medium'>
+              <Card
+                colorIndex='light-1'
+                contentPad='small'>
+                {project.img && <ClickableImage src={project.img} onClick={_ => window.open(project.link, '_blank')} />}
+                <Heading margin='small'>{project.name} {
+                  project.github && <Anchor target='_blank' icon={<SocialGithubIcon size='medium' />}
+                    href={project.github} />
+                }
+                </Heading>
+                <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
+                <Paragraph margin='small'>{project.description}</Paragraph>
+              </Card>
+            </Box>
+          )}
+        </Columns>
+      </Animate>
     </Box>
   </div>
 )
