@@ -13,7 +13,6 @@ import Image from 'grommet/components/Image'
 import Paragraph from 'grommet/components/Paragraph'
 import Heading from 'grommet/components/Heading'
 import { Label as SLabel } from 'semantic-ui-react'
-import { projectsStore } from '../../constants'
 import SocialGithubIcon from 'grommet/components/icons/base/SocialGithub'
 
 const ClickableImage = styled(Image)`
@@ -21,8 +20,7 @@ const ClickableImage = styled(Image)`
   border: 5px;
 `
 
-const Projects = () => (
-  // <Box direction='column' full justify='start' align='center'>
+const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter }) => (
   <div>
     <Box direction='row' full='horizontal' texture={texture} justify='start' appCentered
       pad={{ horizontal:'large', vertical:'medium' }}>
@@ -33,17 +31,16 @@ const Projects = () => (
       <Menu responsive size='large' label='Filter' icon={<FilterIcon />}
         inline
         direction='row'>
-        <Anchor href='#'
-          className='active'>
+        <Anchor onClick={allProjects} className={currentFilter === 'all' ? 'active' : ''}>
           All
         </Anchor>
-        <Anchor href='#'>
+        <Anchor onClick={() => filterProjects('React')} className={currentFilter === 'React' ? 'active' : ''}>
           React/Redux
         </Anchor>
-        <Anchor href='#'>
+        <Anchor onClick={() => filterProjects('Angular')} className={currentFilter === 'Angular' ? 'active' : ''}>
           Angular JS
         </Anchor>
-        <Anchor href='#'>
+        <Anchor onClick={() => filterProjects('Node')} className={currentFilter === 'Node' ? 'active' : ''}>
           Node
         </Anchor>
       </Menu>
@@ -51,7 +48,7 @@ const Projects = () => (
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
       <Columns size='small' justify='between' pad='small'
         maxCount={4} masonry>
-        {projectsStore.map((project, index) =>
+        {filteredArray.map((project, index) =>
           <Box pad='none' margin='medium'>
             <Card
               colorIndex='light-1'
@@ -64,24 +61,19 @@ const Projects = () => (
               </Heading>
               <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
               <Paragraph margin='small'>{project.description}</Paragraph>
-
             </Card>
           </Box>
         )}
       </Columns>
     </Box>
   </div>
-  // </Box>
 )
 
 Projects.propTypes = {
-  auth: PropTypes.object,
-  username: PropTypes.string,
-  password: PropTypes.string,
-  updateUsername: PropTypes.func,
-  updatePassword: PropTypes.func,
-  authenticate: PropTypes.func,
-  authenticated: PropTypes.bool
+  filteredArray: PropTypes.array,
+  filterProjects: PropTypes.func,
+  allProjects: PropTypes.func,
+  currentFilter: PropTypes.string
 }
 
 export default Projects
