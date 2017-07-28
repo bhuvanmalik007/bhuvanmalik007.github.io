@@ -50,7 +50,7 @@ const Projects = () => (
     </Box>
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
       <Columns size='small' justify='between' pad='small'
-        maxCount={3} masonry>
+        maxCount={4} masonry>
         {projectsStore.map((project, index) =>
           <Box pad='none' margin='medium'>
             <Card
@@ -58,7 +58,8 @@ const Projects = () => (
               contentPad='small'>
               <ClickableImage src={project.img} onClick={_ => window.open(project.link, '_blank')} />
               <Heading margin='small'>{project.name} {
-                project.github && <Anchor icon={<SocialGithubIcon size='medium' />} link={project.github} />
+                project.github && <Anchor target='_blank' icon={<SocialGithubIcon size='medium' />}
+                  href={project.github} />
               }
               </Heading>
               <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
