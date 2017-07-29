@@ -86,6 +86,14 @@ export const projectsStore = [{
   description: `A webscraper scraping imdb.com for Game of Thrones quotes using Cheerio JS.`,
   github: 'https://github.com/bhuvanmalik007/quote-unquote'
 }, {
+  name: 'Mission-Admission',
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/missionadmission.png?` +
+  `alt=media&token=1d17d706-4e3b-46ef-91eb-832b59e27209`,
+  tech: [{ name: 'React', color:'teal' }, { name: 'Redux', color:'violet' }],
+  description: `The idea behind VocabDB, inspired by my GRE prep.`,
+  link: 'http://mission-admission.surge.sh',
+  github: 'https://github.com/bhuvanmalik007/vocabdb-prototype'
+}, {
   name: 'Quote-Unquote',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/quoteunquote.png?` +
   `alt=media&token=d7d35bbc-3ca0-4742-9dbc-4591eabe0ae2`,
@@ -96,7 +104,7 @@ export const projectsStore = [{
 }, {
   name: 'Portfolio',
   tech: [{ name: 'React', color:'teal' }, { name: 'Redux', color: 'violet' }],
-  description: `Hi 👋`,
+  description: `Well... 😅`,
   github: 'https://github.com/bhuvanmalik007/bhuvanmalik'
 }, {
   name: 'Indoor WPS',

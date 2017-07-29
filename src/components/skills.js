@@ -111,8 +111,6 @@ const Skills = () =>
         </Animate>
       </Grid.Column>
     </Grid>
-    {/* </Box> */}
-    {/* </Columns> */}
   </SkillsBox>
 
 export default Skills
