@@ -9,6 +9,7 @@ import dp from '../static/dp.jpg'
 import Typist from 'react-typist'
 import Heading from 'grommet/components/Heading'
 import Animate from 'grommet/components/Animate'
+import Anchor from 'grommet/components/Anchor'
 
 const ImageFrame = styled(Box)`
   background: #AF7AC5;
@@ -21,7 +22,13 @@ const StyledTitle = styled(Title)`
 const StyledPara = styled(Paragraph)`
   font-family: 'Montserrat', monospace;
   color: #283747;
-  /*font-size: 30px;*/
+`
+
+const StyledAnchor = styled(Anchor)`
+  color: #aa68c5 !important;
+  &:hover{
+    color: #9f57bd !important;
+  }
 `
 
 const Hero = () => (
@@ -42,14 +49,15 @@ const Hero = () => (
         <StyledPara size='large' margin='small'>
           In my spare time, I play badminton and watch football and tennis.
         </StyledPara>
+        <StyledPara size='large' margin='small'>
+          Click <StyledAnchor label='here' href='https://bhuvanmalik.surge.sh/#/projects' /> to view my projects
+          or scroll down for skills.
+        </StyledPara>
       </Typist>
-      <Box direction='row' justify='center' pad={{ between:'large', vertical:'small' }}>
+      <Box direction='row' justify='center' pad={{ between:'large', vertical:'xsmall' }}>
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5000 }} >
           <Heading size='large' >💻</Heading>
         </Animate>
-        {/* <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 3200 }} >
-          <Heading size='large' >⚛️</Heading>
-        </Animate> */}
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5700 }} >
           <Heading size='large'>🏸</Heading>
         </Animate>
