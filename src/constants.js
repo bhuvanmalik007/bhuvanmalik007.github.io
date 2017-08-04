@@ -1,3 +1,13 @@
+import react from './static/react.png'
+import angular from './static/angular.svg'
+import redux from './static/redux.png'
+import node from './static/node.png'
+import express from './static/express.png'
+import socketio from './static/socketio.png'
+import android from './static/android.png'
+import rx from './static/rx.png'
+import mongo from './static/mongo.png'
+
 export const projectsStore = [{
   name: 'VocabDB',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/vocabdb.png?` +
@@ -129,4 +139,42 @@ export const projectsStore = [{
   tech: [{ name: 'Android', color:'green' }],
   description: `Wallpapers app to change and store the included Lamborghini wallpapers.`,
   github: 'https://github.com/bhuvanmalik007/lamborghini-wallpapers'
+}]
+
+export const skillSet = [{
+  name: 'React',
+  description: 'Component Based Designs',
+  img: react
+}, {
+  name: 'Redux',
+  description: 'Immutable State Management',
+  img: redux
+}, {
+  name: 'Angular JS',
+  description: 'Frontend Development',
+  img: angular
+}, {
+  name: 'Node JS',
+  description: 'Backend Development',
+  img: node
+}, {
+  name: 'Express',
+  description: 'Rest APIs',
+  img: express
+}, {
+  name: 'Socket IO',
+  description: 'Real-time event based communication',
+  img: socketio
+}, {
+  name: 'Android',
+  description: 'Android Application Development with Java',
+  img: android
+}, {
+  name: 'RxJS',
+  description: 'Frontend Development - Redux Sideffects using Observables',
+  img: rx
+}, {
+  name: 'Mongo DB',
+  description: 'Backend Development - Document Based Database',
+  img: mongo
 }]
