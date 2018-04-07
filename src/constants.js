@@ -15,7 +15,8 @@ export const projectsStore = [{
   tech: [{ name: 'React', color:'teal' }, { name: 'Redux', color:'violet' }],
   description: `A complete solution for building vocabulary through flashcards based learning. Features include
   storage, sorting, organization, tests, segregation into lists of flashcards etc. Powered by Oxford Dictionaries.`,
-  github: 'https://github.com/bhuvanmalik007/vocabdb'
+  github: 'https://github.com/bhuvanmalik007/vocabdb',
+  link: 'http://vocabdb.org'
 }, {
   name: 'Dauble Collector',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/dauble.png?` +
