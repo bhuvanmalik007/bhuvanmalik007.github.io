@@ -29,9 +29,7 @@ const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter })
     </Box>
     <Box direction='row' full='horizontal' justify='center'
       pad={{ horizontal:'large', vertical:'large' }}>
-      <Menu responsive size='large' label='Filter' icon={<FilterIcon />}
-        inline
-      direction='row'>
+      <Menu responsive size='large' label='Filter' icon={<FilterIcon />} inline direction='row'>
         <Anchor onClick={allProjects} className={currentFilter === 'all' ? 'active' : ''}>
           All
         </Anchor>

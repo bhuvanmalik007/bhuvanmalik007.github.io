@@ -49,7 +49,7 @@ export default props =>
         align='center'
         pad={{ 'between': 'medium' }}>
         <Paragraph margin='none'>
-          © 2017 Bhuvan Malik
+          © {(new Date()).getFullYear()}  Bhuvan Malik
         </Paragraph>
       </Box>
     </Footer>
