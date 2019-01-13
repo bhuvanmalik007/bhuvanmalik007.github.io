@@ -42,6 +42,9 @@ const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter })
         <Anchor onClick={() => filterProjects('Node')} className={currentFilter === 'Node' ? 'active' : ''}>
           Node
         </Anchor>
+        <Anchor onClick={() => filterProjects('Elixir')} className={currentFilter === 'Node' ? 'active' : ''}>
+          Elixir
+        </Anchor>
       </Menu>
     </Box>
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>

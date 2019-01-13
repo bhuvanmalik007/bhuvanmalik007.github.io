@@ -7,6 +7,7 @@ import socketio from './static/socketio.png'
 import android from './static/android.png'
 import rx from './static/rx.png'
 import mongo from './static/mongo.png'
+import elixir from './static/elixir.png'
 
 export const projectsStore = [{
   name: 'VocabDB',
@@ -58,11 +59,36 @@ export const projectsStore = [{
   github: 'https://github.com/bhuvanmalik007/COLLABPAD-FRONT',
   link: 'https://collabpad007.herokuapp.com'
 }, {
+  name: 'Bitcoin-Blockchain Implementation',
+  tech: [{ name: 'Elixir', color:'purple' }],
+  description: `💰Customisable Bitcoin-Blockchain ecosystem in Elixir. Includes
+  blockchain, crypto wallets, miners and simulation of transactions.`,
+  github: 'https://github.com/bhuvanmalik007/bitcoin'
+}, {
+  name: 'Gossip-PushSum Implementation',
+  tech: [{ name: 'Elixir', color:'purple' }],
+  description: `Determines the convergence of Gossip type algorithms through a simulator based on
+  actors written in Elixir. Full, Line, Torus, random 2D, 3D and Imperfect 2D topologies were
+  implemented for both Push Sum and Gossip algorithms.`,
+  github: 'https://github.com/bhuvanmalik007/gossip-and-pushsum-algorithm'
+}, {
+  name: 'Sum of Consecutive Squares',
+  tech: [{ name: 'Elixir', color:'purple' }],
+  description: `Finds consecutive squares equal to a square given the range of consecutive numbers
+  and limit by distribution of work among actors in Elixir using message passing.`,
+  github: 'https://github.com/bhuvanmalik007/sum-of-consec-squares'
+}, {
   name: 'Collabpad-API',
   tech: [{ name: 'Node', color:'olive' }, { name: 'socket.io', color:'black' }],
   description: `API for Collabpad, uses Socket.io for real-time collaboration.
   Also includes server side Bitcoin integration for donation.`,
   github: 'https://github.com/bhuvanmalik007/COLLABPAD-BITCOIN'
+}, {
+  name: 'Fibonacci Heap Keyword Counter',
+  tech: [{ name: 'C++', color:'black' }],
+  description: `Finds the ’n’ most popular keywords used in a search engine using a max fibonacci
+  heap and a hash table.`,
+  github: 'https://github.com/bhuvanmalik007/fibonacci-heap-keywordcounter'
 }, {
   name: 'Time-Machine',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/timemachine.png?` +
@@ -167,13 +193,17 @@ export const skillSet = [{
   description: 'Real-time event based communication',
   img: socketio
 }, {
+  name: 'RxJS',
+  description: 'Frontend Development - Redux Side-effects using Observables',
+  img: rx
+}, {
+  name: 'Elixir',
+  description: 'Elixir actor modelling, message passing and state management using GenServer',
+  img: elixir
+}, {
   name: 'Android',
   description: 'Android Application Development with Java',
   img: android
-}, {
-  name: 'RxJS',
-  description: 'Frontend Development - Redux Sideffects using Observables',
-  img: rx
 }, {
   name: 'Mongo DB',
   description: 'Backend Development - Document Based Database',

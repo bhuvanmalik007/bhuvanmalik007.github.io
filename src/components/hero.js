@@ -7,8 +7,6 @@ import Paragraph from 'grommet/components/Paragraph'
 import Title from 'grommet/components/Title'
 import dp from '../static/dp.jpg'
 import Typist from 'react-typist'
-import Heading from 'grommet/components/Heading'
-import Animate from 'grommet/components/Animate'
 import Anchor from 'grommet/components/Anchor'
 
 const ImageFrame = styled(Box)`
@@ -41,27 +39,29 @@ const Hero = () => (
       <Typist cursor={{ show: false }} stdTypingDelay={1} avgTypingDelay={20}>
         <StyledTitle align='left' size='large'>Hello World!</StyledTitle>
         <StyledPara size='large' margin='small'>
-          I'm Bhuvan Malik! I'm a Web Developer from India currently working at Dauble.
+          I'm Bhuvan Malik! I'm a Software Engineer and a Computer Science grad student at
+           University of Florida. Go Gators! 🐊
         </StyledPara>
         <StyledPara size='large' margin='small'>
-          I love JavaScript and I'm skilled in creating Web Applications based on React-Redux, AngularJS and Node.
+          I love JavaScript and I'm skilled in creating full-stack Web Applications
+           using React+Redux, Angular.js and Node.js+Express.
         </StyledPara>
-        <StyledPara size='large' margin='small'>
+        {/* <StyledPara size='large' margin='small'>
           In my spare time, I play badminton and watch football and tennis.
-        </StyledPara>
+        </StyledPara> */}
         <StyledPara size='large' margin='small'>
           Click <StyledAnchor label='here' href='https://bhuvanmalik.surge.sh/#/projects' /> to view my projects
           or scroll down for skills.
         </StyledPara>
       </Typist>
-      <Box direction='row' justify='center' pad={{ between:'large', vertical:'xsmall' }}>
+      {/* <Box direction='row' justify='center' pad={{ between:'large', vertical:'xsmall' }}>
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5000 }} >
           <Heading size='large' >💻</Heading>
         </Animate>
         <Animate enter={{ 'animation': 'fade', 'duration': 1000, 'delay': 5700 }} >
           <Heading size='large'>🏸</Heading>
         </Animate>
-      </Box>
+      </Box> */}
     </Box>
   </Box>
 )

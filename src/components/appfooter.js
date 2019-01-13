@@ -35,9 +35,9 @@ export default props =>
         <WhiteHeading margin='none' tag='h4' strong>
           GET IN TOUCH!
         </WhiteHeading>
-        <WhitePara margin='small'>E-MAIL: bhuvanmalik1994@gmail.com</WhitePara>
-        <WhitePara margin='small'>PHONE: +91 9871056888 </WhitePara>
-        <WhitePara margin='small'>ADDRESS: Gurgaon, India</WhitePara>
+        <WhitePara margin='small'>E-MAIL: bhuvanmalik@ufl.edu</WhitePara>
+        <WhitePara margin='small'>PHONE: +1 7065721504 </WhitePara>
+        <WhitePara margin='small'>ADDRESS: Gainesville, Florida</WhitePara>
       </ContactBox>
     </Box>
     <Footer justify='center' colorIndex='light-2' size='large'>

@@ -36,7 +36,7 @@ const links = {
 }
 
 const socialOpener = (type) => {
-  type === 'mail' ? window.open('mailTo:bhuvanmalik1994@gmail.com', '_self') : window.open(links[type], '_blank')
+  type === 'mail' ? window.open('mailTo:bhuvanmalik@ufl.edu', '_self') : window.open(links[type], '_blank')
 }
 
 export const AppHeader = ({ location }) =>
