@@ -75,7 +75,7 @@ export const projectsStore = [{
   name: 'Sum of Consecutive Squares',
   tech: [{ name: 'Elixir', color:'purple' }],
   description: `Finds consecutive squares equal to a square given the range of consecutive numbers
-  and limit by distribution of work among actors in Elixir using message passing.`,
+  and limit by distribution of work among actors in Elixir and message passing.`,
   github: 'https://github.com/bhuvanmalik007/sum-of-consec-squares'
 }, {
   name: 'Collabpad-API',
