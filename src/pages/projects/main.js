@@ -42,17 +42,22 @@ const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter })
         <Anchor onClick={() => filterProjects('Node')} className={currentFilter === 'Node' ? 'active' : ''}>
           Node
         </Anchor>
-        <Anchor onClick={() => filterProjects('Elixir')} className={currentFilter === 'Node' ? 'active' : ''}>
+        <Anchor onClick={() => filterProjects('Elixir')} className={currentFilter === 'Elixir' ? 'active' : ''}>
           Elixir
+        </Anchor>
+        <Anchor onClick={() => filterProjects('Electron')} className={currentFilter === 'Electron' ? 'active' : ''}>
+          Electron
+        </Anchor>
+        <Anchor onClick={() => filterProjects('Cpp')} className={currentFilter === 'Cpp' ? 'active' : ''}>
+          C++
         </Anchor>
       </Menu>
     </Box>
     <Box direction='column' align='center' justify='center' pad='large' colorIndex='light-2'>
       <Animate enter={{ 'animation': 'slide-up', 'duration': 1000, 'delay': 100 }}>
-        <Columns size='small' justify='between' pad='small'
-          maxCount={3} masonry>
+        <Columns size='xxsmall' justify='between' maxCount={3} masonry>
           {filteredArray.map((project, index) =>
-            <Box pad='none' margin='medium'>
+            <Box key={index} pad='none' margin='medium'>
               <Card
                 colorIndex='light-1'
                 contentPad='small'>
@@ -62,7 +67,9 @@ const Projects = ({ filteredArray, filterProjects, allProjects, currentFilter })
                     href={project.github} />
                 }
                 </Heading>
-                <div>{project.tech.map((tech, index) => <SLabel basic color={tech.color}>{tech.name}</SLabel>)}</div>
+                <div>{project.tech.map((tech, index) =>
+                  <SLabel key={index} color={tech.color}>{tech.name}</SLabel>)}
+                </div>
                 <Paragraph margin='small'>{project.description}</Paragraph>
               </Card>
             </Box>

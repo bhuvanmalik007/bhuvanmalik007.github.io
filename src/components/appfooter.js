@@ -26,8 +26,7 @@ const Bar = styled(Title)`
 `
 
 export default props =>
-  <Box align='stretch' direction='column' texture={texture}
-    size={{ 'width': { max: 'full' } }} pad={{ between:'small' }} >
+  <Box align='stretch' direction='column' texture={texture} pad={{ between:'small' }} >
     <Box direction='row' justify='center' pad={{ between: 'large', vertical: 'small' }} >
       <Image src={skyline} size='large' />
       <ContactBox direction='column' justify='start' align='center'
@@ -35,8 +34,8 @@ export default props =>
         <WhiteHeading margin='none' tag='h4' strong>
           GET IN TOUCH!
         </WhiteHeading>
-        <WhitePara margin='small'>E-MAIL: bhuvanmalik@ufl.edu</WhitePara>
-        <WhitePara margin='small'>PHONE: +1 7065721504 </WhitePara>
+        <WhitePara margin='small'>E-MAIL: bhuvanmalik1994@gmail.com</WhitePara>
+        <WhitePara margin='small'>PHONE: +1 (706) 572-1504 </WhitePara>
         <WhitePara margin='small'>ADDRESS: Gainesville, Florida</WhitePara>
       </ContactBox>
     </Box>

@@ -43,8 +43,9 @@ const Hero = () => (
            University of Florida. Go Gators! 🐊
         </StyledPara>
         <StyledPara size='large' margin='small'>
-          I love JavaScript and I'm skilled in creating full-stack Web Applications
-           using React+Redux, Angular.js and Node.js+Express.
+          I'm passionate about functional programming and creating server rendered
+           full-stλck Applications in React with Redux, powered by backend with Node.
+            I have over 35 repositories on GitHub and several articles on Medium for freeCodeCamp with ~160k views.
         </StyledPara>
         {/* <StyledPara size='large' margin='small'>
           In my spare time, I play badminton and watch football and tennis.
