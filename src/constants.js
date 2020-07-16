@@ -40,7 +40,7 @@ export const projectsStore = [{
   description: `A complete solution for building vocabulary through flashcards based learning. Features include
   storage, sorting, organization, tests, segregation into lists of flashcards etc. Powered by Oxford Dictionaries.`,
   github: 'https://github.com/bhuvanmalik007/vocabdb',
-  link: 'http://vocabdb.org'
+  link: 'https://vocabdb.org'
 }, {
   name: 'Olympic History Analysis',
   tech: [{ name: 'Node', color:'olive' }, { name: 'Oracle Db', color:'red' }],
@@ -50,6 +50,22 @@ export const projectsStore = [{
      users with new insights and trends. All this is done through different visual aids
       like graphs and charts like bar graphs, pie charts, heat maps, etc.`,
   github: 'https://github.com/bhuvanmalik007/olympic-history-API'
+}, {
+  name: 'Stock Twitter',
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/` +
+  `stocktwitter.png?alt=media&token=fc3befb6-86d9-4405-9cfd-79fd686a4f42`,
+  tech: [{ name: 'React', color:'teal' }],
+  description: `Takes symbols from the user and displays latest matching tweets using StockTwits API.`,
+  github: 'https://github.com/bhuvanmalik007/stock-tweets-frontend',
+  link: 'https://stocktwitter.netlify.app/'
+}, {
+  name: 'S & P Returns',
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/` +
+  `sp-returns.png?alt=media&token=7287ca6c-7a58-454e-9005-62c1ee8cc41c`,
+  tech: [{ name: 'React', color:'teal' }],
+  description: `React app to show S&P returns and calculate cumulative returns based on a range of years.`,
+  github: 'https://github.com/bhuvanmalik007/sp-returns',
+  link: 'https://stocktwitter.netlify.app/'
 }, {
   name: 'Dauble Collector',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/dauble.png?` +
@@ -82,6 +98,15 @@ export const projectsStore = [{
   description: `Pipetrak GEOUI is a Real Time Geographical Information System Web Application helping Pipeline
   Engineers to track construction of Pipeline along various geographies. Users can query Map for various stages of
   construction and locations, along with rich details of a Geolocation.`
+}, {
+  name: 'Weather App',
+  tech: [{ name: 'Node', color:'olive' }],
+  description: `Given an array of inputs (location name, postal code),
+  log the current time and weather for those locations.`,
+  github: 'https://github.com/bhuvanmalik007/weather-app',
+  img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/` +
+  `o/Screenshot%202020-05-21%20at%204.16.39%20PM.png?alt=media&token=4c23a080-4ef5-4ffe-8ad3-cc74fd32a62a`,
+  link: `https://github.com/bhuvanmalik007/weather-app`
 }, {
   name: 'Collabpad',
   img: `https://firebasestorage.googleapis.com/v0/b/images-82197.appspot.com/o/collabpad.png?` +

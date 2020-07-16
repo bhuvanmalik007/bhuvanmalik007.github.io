@@ -40,18 +40,20 @@ const Hero = () => (
         <StyledTitle align='left' size='large'>Hello World!</StyledTitle>
         <StyledPara size='large' margin='small'>
           I'm Bhuvan Malik! I'm a Software Engineer and a Computer Science grad student at
-           University of Florida. Go Gators! 🐊
+           the University of Florida. Go Gators! 🐊
         </StyledPara>
         <StyledPara size='large' margin='small'>
-          I'm passionate about functional programming and creating server rendered
+          I'm passionate about the Web and creating server rendered
            full-stλck Applications in React with Redux, powered by backend with Node.
-            I have over 35 repositories on GitHub and several articles on Medium for freeCodeCamp with ~160k views.
+            I have over 35 projects on GitHub and several articles on <StyledAnchor
+              label='Medium ' href='https://medium.com/@bhuvanmalik' target='_blank' />
+              for freeCodeCamp with ~160k views.
         </StyledPara>
         {/* <StyledPara size='large' margin='small'>
           In my spare time, I play badminton and watch football and tennis.
         </StyledPara> */}
         <StyledPara size='large' margin='small'>
-          Click <StyledAnchor label='here' href='https://bhuvanmalik.surge.sh/#/projects' /> to view my projects
+          Click <StyledAnchor label='here' href='https://bhuvanmalik.dev/#/projects' /> to view my projects
           or scroll down for skills.
         </StyledPara>
       </Typist>
