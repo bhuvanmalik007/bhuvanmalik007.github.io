@@ -9,3 +9,6 @@ coverage
 .idea/
 
 src/fireconfig.js
+
+# Local Netlify folder
+.netlify
